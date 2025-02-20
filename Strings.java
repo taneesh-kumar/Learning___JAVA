@@ -20,6 +20,6 @@ public class Strings {
             System.out.println("Strings are equal");
         } else{
             System.out.println("Strings are not equal");
-        }
+        }     
     }
 }
