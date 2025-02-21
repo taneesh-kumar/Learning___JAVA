@@ -1,4 +1,4 @@
-public class Recurtion {
+public class Recursion {
     public static void PrintNum(int m){
         if (m == 0) {
             return;
