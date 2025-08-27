@@ -8,14 +8,14 @@ public class SelectionSort {
         int arr[] = {21, 56,69,43,80,-2,100,-50};
 
         for (int i = 0; i < arr.length-1; i++) {
-            int selection = i;
+            int smaller = i;
             for (int j = i+1; j < arr.length ; j++) {
-                if (arr[selection]>arr[j]) {
-                    selection = j;
+                if (arr[smaller]>arr[j]) {
+                    smaller = j;
                 }
             }
-            int temp = arr[selection];
-            arr[selection] = arr[i];
+            int temp = arr[smaller];
+            arr[smaller] = arr[i];
             arr[i] = temp;
         }
         PrintArrray(arr);
