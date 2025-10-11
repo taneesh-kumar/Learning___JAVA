@@ -8,13 +8,13 @@ public class InsertionSort {
         int arr[] = {43, 52, 999, -8, -3, 6, 55, 78, 67};
 
         for (int i = 1; i < arr.length; i++) {
-            int greater = arr[i];
+            int key = arr[i];
             int j = i-1;
-            while (j>=0 && greater < arr[j]) {
+            while (j>=0 && key < arr[j]) {
                 arr[j+1] = arr[j];
                 j--;
             }
-            arr[j+1] = greater;
+            arr[j+1] = key;
         }
         PrintArrray(arr);
     }
